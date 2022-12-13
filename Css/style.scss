@@ -1,0 +1,19 @@
+@import './setup';
+@mixin hoverSet {
+    color: $nav_hover-color; 
+    cursor: pointer;
+}
+@import './variables';
+@import './header';
+@media (min-width: 1200px) {
+    @import './largerH';
+}
+@media (max-width: 992px) {
+    @import './normalH';
+}
+@media (max-width: 765px) {
+    @import './tabletH';
+}
+@media (max-width: 576px) {
+    @import './mobileH';
+}
